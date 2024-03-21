@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Implementasi Fungsi CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .indent {
+            text-indent: 20px;
+        
+        }
+        .height{
+            line-height: 3;
+        }
+
+        .letterspace {
+            letter-spacing: 10px;
+        }
+
+        .wordspace {
+            word-spacing: 5px;
+        }
+
+        .whitespace {
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+    <h1>----- indent-----</h1>
+        <p> di sini tidak ada text indent</p> 
+    <div class="indent">
+         
+        <p>di teks ini terdapat text indent </p>
+    
+    </div>
+    <h1>-----Line Height-----</h1>
+    <div class="height">
+         
+        <p>di teks ini terdapat line height </p>
+        <p>di teks ini terdapat line height </p>
+    </div>
+        <p>di teks ini tidak terdapat line height </p>
+        <p>di teks ini tidak terdapat line height </p>
+    <h1>-----Letterspace-----</h1>
+
+    <div class="letterspace">
+        <p>di sini menggunakan letter space</p>
+
+    </div>
+    <h1>-----Wordspace-----</h1>
+          
+    <div class="wordspace">
+
+        <p>di teks ini word spacing digunakan</p>
+        
+    </div>
+        <p>di teks ini word spacing tidak digunakan</p>
+        
+    <h1>-----Whitespace-----</h1>
+    <div class="whitespace">  
+        <p> Contoh penggunaan white space, walaupun dipersempit tidak akan terbentuk baris baru</p>
+    </div>
+        <p> Contoh tidak menggunakan white space ketika dipersempit dia akan membentuk baris baru dibawahnya supaya teks ga kepotong, yang atas kan kepotong jadinya</p>
+    
+</body>
+</html>
