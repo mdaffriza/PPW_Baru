@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <title>Duplikasi Web</title>
+  <style>
+    body {
+      font-family: "Manrope", sans-serif;
+      margin: 0;
+      padding: 0;
+      color: hsl(210, 10%, 32%); /* Grayish Blue from style guide */
+    }
+
+    .main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0px;
+      width: 1440px; /* Desktop layout */
+      height: 100vh;
+    }
+
+    .card {
+      box-shadow: 1px 1px 50px rgba(67, 67, 67, 0.179);
+      border-radius: 10px;
+      display: flex;
+      margin: 20px;
+      width: auto;
+      height: 360px;
+    }
+
+    .image {
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      width: 375px; /* Mobile layout width */
+      height: auto;
+      overflow: hidden;
+    }
+
+    .image img {
+      width: 100%; 
+      height: 100%; 
+      object-fit: cover; 
+      object-position: 30%;
+    }
+
+    .content {
+      width: 440px; /* Adjust content width based on layout */
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .header {
+      font-size: 13px; /* Body copy size */
+      margin: 0px;
+    }
+
+    .h1 {
+      margin-bottom: 0px !important;
+    }
+
+    .article {
+      margin-top: 0px;
+      font-size: 13px; /* Body copy size */
+      margin-bottom: 10px;
+    }
+
+    .profile-card {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 10px;
+      max-width: 400px; /* Adjust based on layout */
+    }
+
+    .profile-image {
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      margin-right: 10px;
+    }
+
+    .profile-info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .name {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .sub-name {
+      font-size: 14px;
+      color: #666;
+    }
+
+    .sharebtn {
+      width: 40px;
+      height: 40px;
+      align-self: flex-end !important;
+      background-color: #e3e3e3;
+      color: #fff;
+      border: none;
+      border-radius: 25px;
+      padding: 0 !important;
+      margin-left: auto;
+      cursor: pointer;
+      justify-items: center;
+      align-items: center;
+    }
+
+    .shareimg {
+      width: 20px;
+      height: 20px;
+      padding: 10px;
+      padding-bottom: 14px;
+      justify-self: center;
+      align-self: center;
+      cursor: pointer;
+    }
+    .sharebtn:hover {
+      background-color: #0056b3; /* Warna biru sesuai style guide */
+    }
+
+    @media (max-width: 600px) {
+      .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+        width: 375px; /* Mobile layout width */
+        height: 100vh;
+      }
+
+      .content {
+        width: 360px !important; /* Adjust content width based on layout */
+        padding: 20px !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .card {
+
+        box-shadow: 1px 1px 50px rgba(67, 67, 67, 0.179);
+        border-radius: 10px;
+        display: flex;
+        margin: 30px;
+        height: auto;
+        width: 375px; /* Mobile layout width */
+        flex-direction: column;
+      }
+
+      .image {
+        width: 375px; /* Mobile layout width */
+        height: 225px;
+        border-radius: 10px 10px 0 0;
+      }
+
+      .content {
+        width: 100%;
+        padding: 10px;
+      }
+
+      .profile-card {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+        max-width: 300px; /* Adjust based on layout */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="card">
+      <div class="image">
+        <img src="c:\Users\Device Affriza MD\AppData\Local\Temp\bec049d3-a922-482f-8ff0-01c99c60c51e_article-preview-component-master.zip.51e\article-preview-component-master\images\drawers.jpg" alt="Gambar utama">
+      </div>
+      <div class="content">
+        <div class="header">
+          <h1>Shift the Overall look and feel by adding these wonderful touches to furniture in your home</h1>
+        </div>
+        <div class="article">
+          <p>Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I've got some simple tips to help you make any room feel complete</p>
+        </div>
+
+        <div class="profile-card">
+          <img src="C:\Users\Device Affriza MD\Kuliah\images\avatar-michelle.jpg" alt="Profile Image" class="profile-image">
+          <div class="profile-info">
+            <div class="name">Michelle Appleton</div>
+            <div class="sub-name">28 Jun 2020</div>
+          </div>
+          <div class="sharebtn">
+            <img src="file:///C:/Users/Device%20Affriza%20MD/Kuliah/images/icon-share.svg" alt="Profile Image" class="shareimg" height="30px" width="30px">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
